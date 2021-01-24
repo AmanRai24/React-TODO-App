@@ -11,8 +11,8 @@ class AddTodo extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-       this.props.addTodo(this.state);
-       this.setState({
+        this.props.addTodo(this.state);
+        this.setState({
            content: ''
        });
     }
@@ -20,9 +20,10 @@ class AddTodo extends Component {
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label>Add new todo: </label>
+                    <label style={{fontSize:'18px'}}>Add new TODO: </label>
                     <input type='text' onChange={this.handleChange} value={this.state.content}/>
                 </form>
+                <p style={{textAlign:'center', color:'red'}}>*Click on TODO item to delete from the list.</p>
             </div>
         )
     }

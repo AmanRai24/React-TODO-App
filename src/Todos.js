@@ -5,12 +5,12 @@ const Todos=({todos, deleteTodo})=>{
         todos.map(todo=>{
             return(
                 <div className='collection-item' key={todo.id}>
-                    <span onClick={() => {deleteTodo(todo.id)}}>{todo.content}</span>
+                    <span style={{cursor:'pointer'}} onClick={() => {deleteTodo(todo.id)}}>{todo.content}</span>
                 </div>
             )
         })
     ):(
-        <p className='center'>You have no todos left</p>
+        <p className='center'>You have NO Todo's left!!!!</p>
     );
     return(
         <div className='todos collection'>
