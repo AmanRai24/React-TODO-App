@@ -1,6 +1,6 @@
 # React TODO Application
 
-Simple TODO Application to add TODO and Delete TODO from the list.
+Simple TODO Application to add TODO and Delete TODO from the list using `REACT`.
 
 ## How to use and Run
 1. Clone the project or download the zip folder.
